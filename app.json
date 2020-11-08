@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+     "pages/driver/driver",
+     "pages/body/body",
+     "pages/caruser/caruser",
+     "pages/user/user",
+    "pages/userbody/userbody",
+    "pages/userto/userto",
+       "pages/logs/logs",
+    "pages/Feedback/Feedback"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#09bb07",
+    "backgroundColor": "white",
+    "borderStyle": "black",
+    "position":"bottom",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/index1.png",
+        "selectedIconPath": "images/index2.png"
+      },
+      {
+        "pagePath": "pages/driver/driver",
+        "text": "发布信息",
+        "iconPath": "images/exte1.png",
+        "selectedIconPath": "images/exte2.png"
+      },
+      {
+        "pagePath":"pages/user/user",
+        "text": "个人中心",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_1.png"
+    }] 
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

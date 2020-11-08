@@ -1,0 +1,40 @@
+wx.navigateTo({
+        url: '../body/body?qidian=' + submitbody.qidian + '&&zhongdian=' + submitbody.zhongdian + '&&userlength=' + submitbody.userlength + '&&date=' + submitbody.date + '&&time=' + submitbody.time + '&&usertype=' + submitbody.usertype + '',
+      })
+onLoad: function (options) {
+    var that = this;
+    options1 = options;
+    console.log(options)
+    // this.lodingto()
+    // this.indexRequest(options)
+    //调用应用实例的方法获取全局数据
+},
+
+options = {qidian: "泰州-靖江市", zhongdian: "上海-浦东新区", userlength: " 1", date: "2020-11-08", time: "10:08",?…}
+
+
+
+
+view的event.target.dataset[]设置，便于定位
+<view 
+wx:for="{{newArray.ye}}" 
+wx:key="{{index}}" 
+class='wxlist' 
+bindtap='GoDetails' 
+bindlongtap='longtap' 
+bindtouchend='touchend'
+data-index='{{item.id}}' 
+data-indexd='{{index}}' 
+data-type="ye" 
+></view>
+//涉及 点击 长按 及解决冲突 
+ //点击
+GoDetails: function (event) {//检查锁if (this.data.lock){} else {}}
+//手指离开
+touchend: function () {if (this.data.lock) {//开锁setTimeout(() => {this.setData({ lock: false });}, 100);}}
+//长按
+longtap: function (event) {//锁住this.setData({ lock: true });}
+//获取所有的传的参数
+let index = event.currentTarget.dataset['index']
+let indexd = event.currentTarget.dataset['indexd']
+let types = event.currentTarget.dataset['type']
