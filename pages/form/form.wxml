@@ -1,0 +1,11 @@
+<!--form.wxml-->
+<view wx:if="{{submit==false}}">
+  <form bindsubmit="bindSubmit">
+    <input name='input' type='text' maxlength="11" placeholder="输入数字"/>
+    <button form-type="submit">Submit</button>
+  </form>
+</view>
+
+<view wx:else>
+  <label>Form</label>
+</view>
