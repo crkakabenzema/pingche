@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var util = require('../../utils/util.js')
 
 Page({
   data: {
@@ -27,6 +28,8 @@ Page({
     this.getDate()
   },
   storageManager: function(){
+    var time = util.formatTime(new Date()).split(' ')
+    console.log(time[0])
     var cftime = '2022'
     var that = this
     if (that.data.canSubmit==true){
