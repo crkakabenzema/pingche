@@ -1,0 +1,3 @@
+<view>
+<label>用户：{{userInfo.nickName}}</label>
+</view>
